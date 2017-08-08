@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.button {
+    background-color: green;
+    border: none;
+	border-radius: 5px;
+    color: white;
+    padding: 16px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	width: 8em;
+    margin: 4px 5px;
+    cursor: pointer;
+
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s
+
+}
+.button:hover {
+    background-color: blue;
+    color: white;
+}
+
+div.up_down {
+    width: 100%;
+    border: 1px solid black;
+}
+div.left {
+    width: 20%;
+    border: 1px solid white;
+}
+.center {
+    margin: auto;
+    width: 55%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+header {
+    padding: 1em;
+    color: white;
+    background-color: gray;
+    clear: left;
+    text-align: center;
+}
+footer {
+    padding: 1em;
+    color: white;
+    background-color: gray;
+    clear: left;
+    text-align: center;
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="up_down">
+
+<header>
+   <h1>University of Chittagong</h1>
+   <h2>Semester/Year Examination Online Form Fillup</h2>
+</header>
+
+<header>
+	<a href="#" class="button">Home</a>
+	<a href="#" class="button">Form Fillup</a>
+	<a href="C:\Users\user\blog\app\views\dept.html" class="button">Faculty/Department</a>
+
+    <%= button_to 'Department', controller: 'dept'%>
+
+    <a href="#" class="button">Previous Questions</a>
+	<a href="#" class="button">About University</a>
+</header>
+
+</div>
+
+<div class="left">
+<nav>
+  <ul>
+	<a href="#" class="button">Notice</a>
+
+<%= button_to 'Department', controller: 'dept'%>
+
+<%= link_to 'Any Questions?', controller: 'articles' %>
+
+
+<%= link_to 'New article', new_article_path %>
+  </ul>
+</nav>
+
+</div>
+
+<div class="center">
+
+<img src="as.jpg" height="280" width=820" align="center">
+
+</div>
+
+<div class="up_down">
+<footer align=right>Developers : Ayon, Samia, Protik, Tithi.</footer>
+</div>
+
+</body>
+</html>
